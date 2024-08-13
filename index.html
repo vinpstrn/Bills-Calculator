@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bill Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <h1 class="header-title">Calculate your bill</h1>
+      <div class="monthly">
+        <span class="monthly-text">Your monthly bill</span>
+        <h2 class="monthly-amount">0</h2>
+      </div>
+    </header>
+    <main class="main">
+      <form class="form">
+        <div class="meralco-container">
+          <div class="meralco-content">
+            <label for="meralco-prev-amount" class="meralco-text">Previous kwh</label>
+            <input type="number" name="meralco-prev-amount" id="meralco-prev-amount" class="meralco-amount">
+          </div>
+          <div class="meralco-content">
+            <label for="meralco-cur-amount" class="meralco-text">Current kwh</label>
+            <input type="number" name="meralco-cur-amount" id="meralco-cur-amount" class="meralco-amount">
+          </div>
+          <div class="meralco-content">
+            <label for="meralco-kwh-amount" class="meralco-text">kwh rate</label>
+            <input type="number" name="meralco-kwh-amount" id="meralco-kwh-amount" class="meralco-amount">
+          </div>
+        </div>
+        <div class="bill">
+          <label for="meralco-amount" class="bill-text">Meralco</label>
+          <input type="number" name="meralco-amount" id="meralco-amount" class="bill-amount" readonly>
+        </div>
+        <div class="bill">
+          <label for="meralco-amount" class="bill-text">Water</label>
+          <input type="number" name="meralco-amount" id="water-amount" class="bill-amount">
+        </div>
+
+        <div class="bill">
+          <label for="meralco-amount" class="bill-text">Internet</label>
+          <input type="number" name="meralco-amount" id="internet-amount" class="bill-amount">
+        </div>
+        <div class="bill">
+          <label for="meralco-amount" class="bill-text">Foods</label>
+          <input type="number" name="meralco-amount" id="foods-amount" class="bill-amount">
+        </div>
+        <div class="bill">
+          <label for="meralco-amount" class="bill-text">Others</label>
+          <input type="number" name="meralco-amount" id="others-amount" class="bill-amount">
+        </div>
+        <input type="submit" class="btn" value="Calculate">
+      </form>
+    </main>
+
+  </div>
+  
+
+  <script defer src="script.js"></script>
+</body>
+</html>

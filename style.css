@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #F5F5F5;
+  color: #112D4E;
+}
+
+.container {
+  background-color: #ffffff;
+  max-width: 43rem;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5.5rem 3rem 6.5rem 3rem;
+  border-radius: 1rem;
+}
+
+.header-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  color: #112D4E;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.monthly {
+  background-color: #3A6AFC;
+  color: #F9F8FD;
+  padding: 2rem 0 2.5rem 0;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.monthly-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.monthly-amount {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
+.main {
+  margin-top: 4rem;
+}
+
+.meralco-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 1.3rem;
+}
+
+.meralco-content {
+  flex: 1 1 calc(100% / 3);
+}
+
+.meralco-text {
+  font-size: 1.2rem;
+  color: #6E6F73;
+}
+
+.meralco-amount {
+  margin-top: .9rem;
+}
+
+.meralco-amount, .bill-amount {
+  background-color: #F5F5F5;
+  font-family: inherit;
+  border: 0;
+  outline: none;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1.3rem 2rem;
+}
+
+.bill {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+}
+
+.bill-text {
+  font-size: 1.4rem;
+  color: #22252C;
+  margin-bottom: .7rem;
+}
+
+.btn {
+  background-color: #3A6AFC;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  color: #ffffff;
+  width: 100%;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  border-radius: 1rem;
+  margin-top: 3.2rem;
+}
