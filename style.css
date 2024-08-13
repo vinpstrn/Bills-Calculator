@@ -17,6 +17,8 @@ body {
   line-height: 1.5;
   background-color: #F5F5F5;
   color: #112D4E;
+  height: 100vh;
+  position: relative;
 }
 
 .container {
