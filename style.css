@@ -60,11 +60,35 @@ body {
   font-weight: 400;
 }
 
+.month {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.month-text {
+  font-family: inherit;
+  font-size: 1.4rem;
+}
+
+.month-date {
+  width: 14rem;
+  align-self: center;
+  border: none;
+  color: #3A6AFC;
+  padding: .5rem;
+  outline: none;
+  text-align: center;
+  border: 1px solid #3A6AFC;
+} 
+
 .main {
   margin-top: 4rem;
 }
 
-.meralco-container {
+.electricity-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,20 +96,20 @@ body {
   margin-bottom: 1.3rem;
 }
 
-.meralco-content {
+.electricity-content {
   flex: 1 1 calc(100% / 3);
 }
 
-.meralco-text {
+.electricity-text {
   font-size: 1.2rem;
   color: #6E6F73;
 }
 
-.meralco-amount {
+.electricity-amount {
   margin-top: .9rem;
 }
 
-.meralco-amount, .bill-amount {
+.electricity-amount, .bill-amount {
   background-color: #F5F5F5;
   font-family: inherit;
   border: 0;
@@ -121,5 +145,82 @@ body {
   text-transform: uppercase;
   padding: 1.5rem 0;
   border-radius: 1rem;
+}
+
+.btn:not(:last-child) {
   margin-top: 3.2rem;
+}
+
+.btn-monthly {
+  background-color: transparent;
+  border: 3px solid #3A6AFC;
+  color: #3A6AFC;
+  margin-top: 1.5rem;
+}
+
+.report {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.report-btn {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #6E6F73;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.months {
+  border-top: 2px solid #F7F7F7;
+}
+
+.months-container {
+  padding: 1.5rem 0;
+  border-bottom: 2px solid #F7F7F7;
+}
+
+.months-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.months-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.months-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.months-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.months-content {
+  padding: 1rem 2.6rem 0 0;
+}
+
+.month-item {
+  font-size: 1.2rem;
+  color: #6E6F73;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
 }

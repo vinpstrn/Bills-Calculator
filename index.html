@@ -13,57 +13,105 @@
 
   <div class="container">
 
-    <header class="header">
-      <h1 class="header-title">Calculate your bill</h1>
-      <div class="monthly">
-        <span class="monthly-text">Your monthly bill</span>
-        <h2 class="monthly-amount">0</h2>
+    <div class="input-section show">
+      <header class="header">
+        <h1 class="header-title">Bills Calculator</h1>
+        <div class="monthly">
+          <span class="monthly-text">Your monthly bill</span>
+          <h2 class="monthly-amount">0</h2>
+        </div>
+      </header>
+      <main class="main">
+        <form class="form" action="">
+          <div class="month">
+            <label for="month-date" class="month-text">Select month:</label>
+            <input type="date" id="month-date" class="month-date" name="month-date" />
+          </div>
+          <div class="electricity-container">
+            <div class="electricity-content">
+              <label for="electricity-prev-amount" class="electricity-text">Previous kwh</label>
+              <input type="number" name="electricity-prev-amount" id="electricity-prev-amount" class="electricity-amount">
+            </div>
+            <div class="electricity-content">
+              <label for="electricity-cur-amount" class="electricity-text">Current kwh</label>
+              <input type="number" name="electricity-cur-amount" id="electricity-cur-amount" class="electricity-amount">
+            </div>
+            <div class="electricity-content">
+              <label for="electricity-kwh-amount" class="electricity-text">kwh rate</label>
+              <input type="number" name="electricity-kwh-amount" id="electricity-kwh-amount" class="electricity-amount">
+            </div>
+          </div>
+          <div class="bill">
+            <label for="electricity-amount" class="bill-text">Electricity</label>
+            <input type="number" name="electricity-amount" id="electricity-amount" class="bill-amount" readonly>
+          </div>
+          <div class="bill">
+            <label for="meralco-amount" class="bill-text">Water</label>
+            <input type="number" name="meralco-amount" id="water-amount" class="bill-amount">
+          </div>
+  
+          <div class="bill">
+            <label for="meralco-amount" class="bill-text">Internet</label>
+            <input type="number" name="meralco-amount" id="internet-amount" class="bill-amount">
+          </div>
+          <div class="bill">
+            <label for="meralco-amount" class="bill-text">Foods</label>
+            <input type="number" name="meralco-amount" id="foods-amount" class="bill-amount">
+          </div>
+          <div class="bill">
+            <label for="meralco-amount" class="bill-text">Others</label>
+            <input type="number" name="meralco-amount" id="others-amount" class="bill-amount">
+          </div>
+          <div class="btn-container">
+            <input type="submit" class="btn btn-calculate" value="Calculate">
+            <input type="submit" class="btn btn-monthly" value="Add to Monthly Report">
+          </div>
+        </form>
+      </main>
+      <div class="report">
+        <a class="report-btn">View monthly report</a>
       </div>
-    </header>
-    <main class="main">
-      <form class="form">
-        <div class="meralco-container">
-          <div class="meralco-content">
-            <label for="meralco-prev-amount" class="meralco-text">Previous kwh</label>
-            <input type="number" name="meralco-prev-amount" id="meralco-prev-amount" class="meralco-amount">
-          </div>
-          <div class="meralco-content">
-            <label for="meralco-cur-amount" class="meralco-text">Current kwh</label>
-            <input type="number" name="meralco-cur-amount" id="meralco-cur-amount" class="meralco-amount">
-          </div>
-          <div class="meralco-content">
-            <label for="meralco-kwh-amount" class="meralco-text">kwh rate</label>
-            <input type="number" name="meralco-kwh-amount" id="meralco-kwh-amount" class="meralco-amount">
-          </div>
-        </div>
-        <div class="bill">
-          <label for="meralco-amount" class="bill-text">Meralco</label>
-          <input type="number" name="meralco-amount" id="meralco-amount" class="bill-amount" readonly>
-        </div>
-        <div class="bill">
-          <label for="meralco-amount" class="bill-text">Water</label>
-          <input type="number" name="meralco-amount" id="water-amount" class="bill-amount">
-        </div>
+    </div>
 
-        <div class="bill">
-          <label for="meralco-amount" class="bill-text">Internet</label>
-          <input type="number" name="meralco-amount" id="internet-amount" class="bill-amount">
+    <!-- --- REPORTS PAGE ---- -->
+    <div class="reports-section hide">
+      <header class="header">
+        <h1 class="header-title">Monthly report</h1>
+      </header>
+      <main class="main">
+        <div class="months">
+
+          <!-- DATA WILL BE INSERTED HERE -->
+
+          
+          <!-- SAMPLE DATA -->
+          <!-- <div class="months-container">
+            <div class="months-title">
+              <span class="months-month">January 2024</span>
+              <div class="months-dropdown">
+                <p class="months-bill">PHP 10,000</p>
+                <div class="months-icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
+              </div>
+            </div>
+            <div class="months-content">
+              <ul class="months-list">
+                <li class="month-item"><span class="months-utility">Electricity:</span><span class="months-amount">PHP 5,500</span></li>
+                <li class="month-item"><span class="months-utility">Water:</span><span class="months-amount">PHP 500</span></li>
+                <li class="month-item"><span class="months-utility">Internet:</span><span class="months-amount">PHP 800</span></li>
+                <li class="month-item"><span class="months-utility">Foods:</span><span class="months-amount">PHP 1,500</span></li>
+                <li class="month-item"><span class="months-utility">Others:</span><span class="months-amount">PHP 2,500</span></li>
+              </ul>
+            </div>
+          </div> -->
         </div>
-        <div class="bill">
-          <label for="meralco-amount" class="bill-text">Foods</label>
-          <input type="number" name="meralco-amount" id="foods-amount" class="bill-amount">
-        </div>
-        <div class="bill">
-          <label for="meralco-amount" class="bill-text">Others</label>
-          <input type="number" name="meralco-amount" id="others-amount" class="bill-amount">
-        </div>
-        <input type="submit" class="btn" value="Calculate">
-      </form>
-    </main>
+      </main>
+      <input type="submit" class="btn btn-back" value="BACK">
+    </div>
 
   </div>
   
-
+  <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script defer src="script.js"></script>
 </body>
 </html>
